@@ -21,6 +21,10 @@ urlpatterns = [
     path("", include("App.urls")),
     path("NewYear/", include("NewYear.urls")),
     path("Christmas/", include("Christmas.urls")),
+    path("Stat/", include("staticapp.urls")),
+    path("ABCD/", include("ABCD.urls")),
+    path("Tasks/", include("Tasks.urls")),
+
 
 
 ]

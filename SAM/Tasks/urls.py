@@ -3,6 +3,6 @@ from .import views
 
 
 urlpatterns = [
-    path("", views.test, name="test"),
+    path("", views.task, name="task"),
 
 ]
