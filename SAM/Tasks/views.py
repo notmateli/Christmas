@@ -1,13 +1,10 @@
 from django.shortcuts import render
 from django import forms
 
-
-# from django.forms import forms
-
-# Create your views here.
+#Create your views here
 class NewTaskForm(forms.Form):
     task = forms.CharField(label="Task Field")
-    # phone = forms.IntegerField(label="Age", min_value="10", max_value="12")
+    phone = forms.IntegerField(label="Age", min_value="10", max_value="12")
 
 
 class OldTaskForm(forms.Form):
@@ -18,9 +15,9 @@ tasks = ["Buy groceries", "Play games", "Watch Football"]
 
 
 def test(request):
-    return render(request, "tasks.html", {
+    return render(request, "task.html", {
 
-        "Tasks": tasks
+        "tasks": tasks
 
     })
 

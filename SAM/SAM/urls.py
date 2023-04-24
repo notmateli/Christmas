@@ -23,8 +23,6 @@ urlpatterns = [
     path("Christmas/", include("Christmas.urls")),
     path("Stat/", include("staticapp.urls")),
     path("ABCD/", include("ABCD.urls")),
-    path("Tasks/", include("Tasks.urls")),
-
-
-
+    path("Tasks/", include("tasks.urls")),
+    path("Crud/", include("crud.urls")),
 ]

@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'Christmas',
     'staticapp',
     'ABCD',
-    'Tasks'
+    'tasks',
+    'crud',
 ]
 
 MIDDLEWARE = [
