@@ -30,7 +30,8 @@
           <br />
 
 
-          <form action="/insert" method="post">
+          <form action="/crud/insert" method="POST">
+            {% csrf_token %}
             <div class="form-group">
               <input
                 type="text"

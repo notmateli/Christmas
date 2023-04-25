@@ -24,5 +24,5 @@ urlpatterns = [
     path("Stat/", include("staticapp.urls")),
     path("ABCD/", include("ABCD.urls")),
     path("Tasks/", include("tasks.urls")),
-    path("Crud/", include("crud.urls")),
+    path("crud/", include("crud.urls")),
 ]
