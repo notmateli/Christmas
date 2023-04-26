@@ -13,6 +13,10 @@ def crud(request):
     return render(request, "crud.html", {
         "data": data
     })
+
+
+
+
 def insertData(request):
     if request.method == "POST":
         name = request.POST.get('name')
@@ -26,5 +30,32 @@ def insertData(request):
         return redirect("/crud")
     return render(request, 'crud.html')
 
+
+def updateData(request, id):
+    if request.method == "POST":
+        name = request.POST['name']
+        email = request.POST['email']
+        age = request.POST['age']
+        gender = request.POST['gender']
+
+        edit = Student.objects.get(id=id)
+        edit.name = name
+        edit.email = email
+        edit.gender = gender
+        edit.age = age
+        edit.save()
+        messages.warning(request, "Data Updated Successfully")
+        return redirect("/")
+
+    d = Student.objects.get(id=id)
+    context = {"d": d}
+    return render(request, "edit.html", context)
+
+
+def deleteData(request, id):
+    d = Student.objects.get(id=id)
+    d.delete()
+    messages.error(request, "Data deleted Successfully")
+    return redirect("/")
 
 
