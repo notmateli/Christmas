@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+
+
+
+
+
+.body{
+    margin: 0;
+    padding: 0;
+    background-color:#fff;
+    font-family:sans-serif;
+    color:#ffffff;
+
+}
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background: url("images/G.O.A.T.S OF SPORTS.jpg");
+    background-repeat: no-repeat;
+}
+.banner .navbar{
+   margin-top: 4%;
+}
+.banner .navbar-brand{
+    color: white;
+    font-size:1.8em;
+    font-weight: 700;
+    margin-left: 10%;
+}
+.banner .nav{
+    margin-right: 10%;
+
+}
+.banner .nav li a{
+    color: lightseagreen;
+    font-size: 1.2em;
+}
+.banner .info{
+    margin-top: 15%;
+    transform: translateY(-15%);
+}
+.banner .info h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: white;
+    letter-spacing:2px;
+}
+.banner .info p{
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+    letter-spacing:2px;
+}
+.banner .info a{
+    margin-left:50%;
+    transform: translateX(-50%);
+    color: white;
+    background: #e91d43;
+    padding: 10px 20px ;
+    font-size: 2em;
+    font-weight: 700;
+
+}
+.banner .info a:hover{
+background:#e91e63;
+}
+.about-1{
+    margin: 30px;
+    padding: 5px;
+}
+.about-1 p{
+    text-align: center;
+    padding: 3px;
+    color: white;
+}
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding:80px 30px;
+    box-shadow: 0 0 9px rgba(0,0,0, .6);
+
+}
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+
+}
+.about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.about-item hr{
+    width: 46px;
+    height: 3px;
+    background-color: black;
+    border: none;
+}
+
+.about-item hr{
+    margin-bottom: 0 auto;
+}
+
+.about-item p{
+    margin-top: 20px;
+    color: black;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    background-color: lightblue;
+    color: white;
+}
+.about-item:hover hr{
+    background-color: white;
+}
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+    transition: all 400ms  ease-in-out;
+}
+ .fa-brands{
+    color: blue;
+    font-size: 2rem;
+
+}
+.social-media-icons-white a{
+    color: white;
+    font-size: 2rem;
+}
+.singleCol{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.container h1{
+    color: black;
+}
+.social-media {
+			display: inline-block;
+			margin: 10px;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			color: #fff;
+			font-size: 24px;
+		}
+
+.facebook {
+			background-color: #3b5998;
+		}
+
+.twitter {
+			background-color: #55acee;
+		}
+
+.instagram {
+			background-color: #e4405f;
+		}
+
+.youtube {
+			background-color: #cd201f;
+		}
+
+
+

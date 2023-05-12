@@ -1,0 +1,18 @@
+{%extends "layout.html" %}
+
+
+{% block body %}
+<h1>Ongeza</h1>
+<form method="POST" action="{% url 'tasks:ongeza' %}">
+    {% csrf_token %}
+    <label></label>
+    {{ form }} 
+    <input type="submit">
+
+
+</form>
+
+
+
+
+{% endblock %}
